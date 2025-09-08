@@ -1,0 +1,19 @@
+User-agent: *
+
+# The "Allow: /" rule above allows crawling everything by default.
+# The rules below are for disallowing specific files and directories.
+
+# Disallow temporary files and downloads
+Disallow: /Images/t_files/
+Disallow: /*.download
+
+# Disallow projects page as it's not yet created
+Disallow: /projects.html
+
+# Disallow system and development files/folders
+Disallow: /.git/
+Disallow: /.env
+Disallow: /node_modules/
+
+# Sitemap location
+Sitemap: https://starmoongroup.com/sitemap.xml

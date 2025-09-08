@@ -1,0 +1,62 @@
+{
+  "name": "STARMOON GROUP Ltd",
+  "short_name": "STARMOON",
+  "description": "شريكك الموثوق للنمو المستدام في أفريقيا",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0ea5e9",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "ar",
+  "dir": "rtl",
+  "icons": [
+    {
+      "src": "./Images/logo.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./Images/logo.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "productivity"],
+  "screenshots": [
+    {
+      "src": "./Images/logo.jpg",
+      "sizes": "1280x720",
+      "type": "image/jpeg",
+      "form_factor": "wide"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "خدماتنا",
+      "short_name": "الخدمات",
+      "description": "استكشف خدماتنا المتخصصة",
+      "url": "/services.html",
+      "icons": [
+        {
+          "src": "./Images/logo.jpg",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "اتصل بنا",
+      "short_name": "اتصل",
+      "description": "تواصل معنا للحصول على استشارة",
+      "url": "/contact.html",
+      "icons": [
+        {
+          "src": "./Images/logo.jpg",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ]
+} 

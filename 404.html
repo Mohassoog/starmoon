@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <title>الصفحة غير موجودة - STARMOON GROUP Ltd</title>
+    <meta name="description" content="الصفحة التي تبحث عنها غير موجودة. عد إلى الصفحة الرئيسية أو استخدم القائمة للتنقل.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./Images/logo.jpg" type="image/jpeg">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="nav-brand">
+                    <a href="index.html">
+                        <img src="./Images/logo.jpg" alt="STARMOON GROUP Ltd" class="logo">
+                        <span class="brand-text">STARMOON GROUP Ltd</span>
+                    </a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="about.html">من نحن</a></li>
+                    <li><a href="services.html">خدماتنا</a></li>
+                    <li><a href="why-us.html">لماذا نحن</a></li>
+                    <li><a href="achievements.html">إنجازاتنا</a></li>
+                    <li><a href="contact.html">اتصل بنا</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="section error-section">
+            <div class="container">
+                <div class="error-content">
+                    <div class="error-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="15" y1="9" x2="9" y2="15"></line>
+                            <line x1="9" y1="9" x2="15" y2="15"></line>
+                        </svg>
+                    </div>
+                    <h1 class="error-title">404</h1>
+                    <h2 class="error-subtitle">الصفحة غير موجودة</h2>
+                    <p class="error-description">
+                        عذراً، الصفحة التي تبحث عنها غير موجودة أو تم نقلها إلى مكان آخر.
+                    </p>
+                    <div class="error-actions">
+                        <a href="index.html" class="btn btn-primary">العودة للرئيسية</a>
+                        <a href="contact.html" class="btn btn-outline">اتصل بنا</a>
+                    </div>
+                    <div class="error-suggestions">
+                        <h3>صفحات مقترحة:</h3>
+                        <ul>
+                            <li><a href="about.html">من نحن</a></li>
+                            <li><a href="services.html">خدماتنا</a></li>
+                            <li><a href="why-us.html">لماذا نحن</a></li>
+                            <li><a href="contact.html">اتصل بنا</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="./Images/logo.jpg" alt="STARMOON GROUP Ltd" class="footer-logo">
+                    <h3>STARMOON GROUP Ltd</h3>
+                    <p>شريكك الموثوق للنمو المستدام في أفريقيا</p>
+                </div>
+                <div class="footer-links">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="about.html">من نحن</a></li>
+                        <li><a href="services.html">خدماتنا</a></li>
+                        <li><a href="why-us.html">لماذا نحن</a></li>
+                        <li><a href="contact.html">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h4>خدماتنا</h4>
+                    <ul>
+                        <li>العقارات</li>
+                        <li>التعليم</li>
+                        <li>السفر والسياحة</li>
+                        <li>الاستشارات التجارية</li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>معلومات الاتصال</h4>
+                    <p>📧 starmoon.co.ltd@gmail.com</p>
+                    <p>📞 +250 798 673 456</p>
+                    <p>📍 كيغالي، رواندا</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 STARMOON GROUP Ltd. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // إضافة تأثيرات بصرية للصفحة
+        document.addEventListener('DOMContentLoaded', function() {
+            const errorContent = document.querySelector('.error-content');
+            errorContent.style.opacity = '0';
+            errorContent.style.transform = 'translateY(20px)';
+            
+            setTimeout(() => {
+                errorContent.style.transition = 'all 0.6s ease';
+                errorContent.style.opacity = '1';
+                errorContent.style.transform = 'translateY(0)';
+            }, 100);
+        });
+    </script>
+</body>
+</html> 
