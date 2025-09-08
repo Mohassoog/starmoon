@@ -53,7 +53,10 @@
 
     <section class="section">
       <div class="container grid-2 v-start">
-        <form class="form card animate-fade-in-left" id="contactForm">
+        <form class="form card animate-fade-in-left" id="contactForm" action="https://formsubmit.co/starmoon.co.ltd@gmail.com" method="POST">
+          <!-- Success Page -->
+          <input type="hidden" name="_next" value="https://starmoongroup.com/thanks.html">
+          <input type="hidden" name="_subject" value="New Contact Form Submission from Website">
           <div class="grid-2">
             <div class="field">
               <label for="name">Full name</label>
@@ -107,7 +110,6 @@
             </div>
             <button class="btn btn-primary" type="submit">Send Message</button>
           </div>
-          <p id="formStatus" class="muted" role="status" aria-live="polite"></p>
         </form>
         <aside class="card stack gap-m animate-fade-in-right">
           <h3>Contact Information</h3>
@@ -309,27 +311,6 @@
       });
     });
 
-    // Add hover effects to cards
-    document.querySelectorAll('.card').forEach(card => {
-      card.addEventListener('mouseenter', function() {
-        this.style.transform = 'translateY(-5px) scale(1.02)';
-      });
-      
-      card.addEventListener('mouseleave', function() {
-        this.style.transform = 'translateY(0) scale(1)';
-      });
-    });
-
-    const form = document.getElementById('contactForm');
-    const statusEl = document.getElementById('formStatus');
-    form.addEventListener('submit', function(e){
-      e.preventDefault();
-      statusEl.textContent = 'Sending your message…';
-      setTimeout(function(){
-        statusEl.textContent = 'Thank you for contacting STARMOON GROUP Ltd! We will get back to you within one business day.';
-        form.reset();
-      }, 900);
-    });
   </script>
 </body>
 </html>
