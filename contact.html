@@ -53,8 +53,9 @@
 
     <section class="section">
       <div class="container grid-2 v-start">
-        <form class="form card animate-fade-in-left" id="contactForm" action="https://formsubmit.co/starmoon.co.ltd@gmail.com" method="POST">
-          <input type="hidden" name="_subject" value="New Contact Form Submission from Website">
+        <form class="form card animate-fade-in-left" id="contactForm" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html">
+          <input type="hidden" name="form-name" value="contact" />
+          <p class="hidden"><label>Don’t fill this out if you're human: <input name="bot-field" /></label></p>
           <div class="grid-2">
             <div class="field">
               <label for="name">Full name</label>
@@ -107,7 +108,6 @@
               </label>
             </div>
             <button class="btn btn-primary" type="submit">Send Message</button>
-            <p id="formStatus" class="muted" role="status" aria-live="polite" style="margin-top: 1rem; color: green;"></p>
           </div>
         </form>
         <aside class="card stack gap-m animate-fade-in-right">
@@ -310,41 +310,7 @@
       });
     });
 
-    // Handle form submission to show a message on the same page
-    async function handleFormSubmit(event) {
-        event.preventDefault();
-        const form = event.target;
-        const statusEl = document.getElementById('formStatus');
-        const data = new FormData(form);
-
-        statusEl.textContent = 'Sending...';
-        statusEl.style.color = 'var(--muted)';
-
-        try {
-            const response = await fetch(form.action, {
-                method: form.method,
-                body: data,
-                headers: {
-                    'Accept': 'application/json'
-                }
-            });
-
-            if (response.ok) {
-                statusEl.textContent = 'Thank you! Your message has been sent successfully.';
-                statusEl.style.color = 'green';
-                form.reset();
-            } else {
-                statusEl.textContent = 'Oops! There was a problem. Please try again.';
-                statusEl.style.color = 'red';
-            }
-        } catch (error) {
-            statusEl.textContent = 'Oops! There was a problem. Please try again.';
-            statusEl.style.color = 'red';
-        }
-    }
-
-    const form = document.getElementById('contactForm');
-    form.addEventListener("submit", handleFormSubmit);
+    
   </script>
 </body>
 </html>
